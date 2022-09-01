@@ -9,3 +9,37 @@ def curso(request):
     texto =f"Curso Creado: nombre: {curso.nombre} comision: {curso.comision}"
     return HttpResponse(texto)
 
+
+
+
+def inicio(request):
+
+      return HttpResponse("Pagina de inicio")
+
+
+
+def estudiantes(request):
+
+      return HttpResponse("Pagina de estudiantes")
+
+
+def entregables(request):
+
+      return HttpResponse("Pagina de entregables")
+
+
+def cursos(request):
+
+    return HttpResponse("Pagina de cursos")
+
+     
+
+def profesores(request):
+
+    return HttpResponse("Pagina de profesores")
+
+      
+
+
+
+
