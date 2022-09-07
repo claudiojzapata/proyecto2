@@ -14,29 +14,29 @@ def curso(request):
 
 def inicio(request):
 
-      return HttpResponse("Pagina de inicio")
+      return render(request, "AppCoder/inicio.html")
 
 
 
 def estudiantes(request):
 
-      return HttpResponse("Pagina de estudiantes")
+      return render(request, "AppCoder/estudiandes.html")
 
 
 def entregables(request):
 
-      return HttpResponse("Pagina de entregables")
+      return render(request, "AppCoder/entregables.html")
 
 
 def cursos(request):
 
-    return HttpResponse("Pagina de cursos")
+    return render(request, "AppCoder/cursos.html")
 
      
 
 def profesores(request):
 
-    return HttpResponse("Pagina de profesores")
+    return render(request, "AppCoder/profesores.html")
 
       
 

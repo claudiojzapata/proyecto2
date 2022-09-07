@@ -9,6 +9,6 @@ urlpatterns = [
     path('estudiantes/', estudiantes),
     path('entregables/', entregables),
     path('cursos/', cursos),
-    path('inicio/', inicio),
+    path('', inicio),
 
 ]
