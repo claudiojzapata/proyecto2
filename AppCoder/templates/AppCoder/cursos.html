@@ -1,14 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta htto-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CURSOS</title>
+{% extends "AppCoder/padre.html" %}
 
-    </head>
-    <body>
-        <h1>PAGINA DE CURSOS</h1>
-    </body>
-    </html>
+{% load static %}
+
+{%block titulo_de_pagina %}
+<h1 class="mb-5">CURSOS</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+{% for curso in listita %}
+
+<h1>{{ Curso }}</h1>
+
+{% endfor %}
+
+{% endblock %}
     

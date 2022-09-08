@@ -9,6 +9,9 @@ class Curso(models.Model):
     nombre = models.CharField(max_length=50)
     comision = models.IntegerField()
 
+    def __str__(self) -> str:
+        return self.nombre+" "+str(self.comision)
+
 class Estudiantes(models.Model):
     nombre = models.CharField(max_length=50) 
     apellido = models.CharField(max_length=50)
@@ -24,6 +27,7 @@ class Entregable(models.Model):
     nombre = models.CharField(max_length=50)
     fechaDeEntrega = models.DateField()
     entregado = models.BooleanField()
+
     
 
 

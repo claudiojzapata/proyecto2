@@ -20,7 +20,7 @@ def inicio(request):
 
 def estudiantes(request):
 
-      return render(request, "AppCoder/estudiandes.html")
+      return render(request, "AppCoder/estudiantes.html")
 
 
 def entregables(request):
@@ -28,9 +28,16 @@ def entregables(request):
       return render(request, "AppCoder/entregables.html")
 
 
-def cursos(request):
 
-    return render(request, "AppCoder/cursos.html")
+
+def cursos (request):
+      curso1=Curso(nombre="Cursito de Python",comicion=31100)
+      curso1.save()
+      curso2=Curso(nombre="Cursito de Django",comicion=31101)
+      curso2.save()
+      lista=[curso1, curso2]
+      return render(request, "AppCoder/cursos.html" , {"listita":lista})
+
 
      
 
